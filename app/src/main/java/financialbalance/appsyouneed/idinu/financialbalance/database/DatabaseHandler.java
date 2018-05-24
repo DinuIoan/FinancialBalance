@@ -6,6 +6,7 @@ import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.io.Serializable;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
@@ -237,6 +238,58 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         cursor.close();
         database.close();
         return incomeOutcomesList;
+    }
+
+    public MonthSavings getMonthSaving(int id) {
+        SQLiteDatabase database = getReadableDatabase();
+        String SELECT_MONTH_SAVING = " select * from " + MONTH_SAVINGS_TABLE
+                + " where " + ID + " = " + id;
+        Cursor cursor = database.rawQuery(SELECT_MONTH_SAVING, null);
+        MonthSavings monthSavings = new MonthSavings();
+
+        while (cursor.moveToFirst()) {
+            monthSavings.setId(cursor.getInt(0));
+            monthSavings.setMonth(cursor.getString(1));
+            monthSavings.setSavings(cursor.getLong(2));
+        }
+        cursor.close();
+        database.close();
+        return monthSavings;
+    }
+
+    public List<MonthSavings> getAllMonthSavings() {
+        SQLiteDatabase database = getReadableDatabase();
+        String SELECT_ALL_MONTH_SAVING = " select * from " + MONTH_SAVINGS_TABLE;
+        Cursor cursor = database.rawQuery(SELECT_ALL_MONTH_SAVING, null);
+        List<MonthSavings> monthSavingsList = new ArrayList<>();
+
+        while (cursor.moveToNext()) {
+            MonthSavings monthSavings = new MonthSavings();
+            monthSavings.setId(cursor.getInt(0));
+            monthSavings.setMonth(cursor.getString(1));
+            monthSavings.setSavings(cursor.getLong(2));
+            monthSavingsList.add(monthSavings);
+        }
+        cursor.close();
+        database.close();
+        return monthSavingsList;
+    }
+
+    public MonthSavings getMonthSavingsByMonth(String month) {
+        SQLiteDatabase database = getReadableDatabase();
+        String SELECT_MONTH_SAVING_BY_MONTS = "select * from " + MONTH_SAVINGS_TABLE
+                + " where " + MONTH + " = '" + month + "'";
+        Cursor cursor = database.rawQuery(SELECT_MONTH_SAVING_BY_MONTS, null);
+        MonthSavings monthSavings = new MonthSavings();
+
+        while (cursor.moveToFirst()) {
+            monthSavings.setId(cursor.getInt(0));
+            monthSavings.setMonth(cursor.getString(1));
+            monthSavings.setSavings(cursor.getLong(2));
+        }
+        cursor.close();
+        database.close();
+        return monthSavings;
     }
 
 }

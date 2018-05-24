@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class MonthSavings {
     private int id;
-    private Date month;
+    private String month;
     private Long savings;
 
     public int getId() {
@@ -15,11 +15,11 @@ public class MonthSavings {
         this.id = id;
     }
 
-    public Date getMonth() {
+    public String getMonth() {
         return month;
     }
 
-    public void setMonth(Date month) {
+    public void setMonth(String month) {
         this.month = month;
     }
 
