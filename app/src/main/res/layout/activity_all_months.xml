@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_all_months"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/month1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month1" />
+
+    <Button
+        android:id="@+id/month2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month2" />
+
+    <Button
+        android:id="@+id/month3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month3" />
+
+    <Button
+        android:id="@+id/month4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month4" />
+
+    <Button
+        android:id="@+id/month5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month5" />
+
+    <Button
+        android:id="@+id/month6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month6" />
+
+    <Button
+        android:id="@+id/month7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month7" />
+
+    <Button
+        android:id="@+id/month8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month8" />
+
+    <Button
+        android:id="@+id/month9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month9" />
+
+    <Button
+        android:id="@+id/month10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month10" />
+
+    <Button
+        android:id="@+id/month11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="@string/month11" />
+
+    <Button
+        android:id="@+id/month12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month12" />
+</LinearLayout>
