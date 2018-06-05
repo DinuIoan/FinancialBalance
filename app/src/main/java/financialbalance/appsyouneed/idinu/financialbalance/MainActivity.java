@@ -1,7 +1,8 @@
 package financialbalance.appsyouneed.idinu.financialbalance;
 
 
-import android.app.Fragment;
+
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -26,14 +27,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
-
-
-    private void setupViewPager(ViewPager viewPager) {
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
         adapter.addFragment(new CurrentMonthFragment(), "Current month");
         adapter.addFragment(new AllMonthsFragment(), "All months");
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {

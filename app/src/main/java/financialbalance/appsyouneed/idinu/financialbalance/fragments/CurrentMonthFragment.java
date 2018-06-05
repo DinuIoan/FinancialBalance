@@ -10,7 +10,9 @@ import financialbalance.appsyouneed.idinu.financialbalance.R;
 
 
 public class CurrentMonthFragment extends Fragment {
+
     public CurrentMonthFragment() {
+        super();
     }
 
     @Override

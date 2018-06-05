@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#E1F5FE</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="januaryColorStart">#00BCD4</color>
+    <color name="januaryColorEnd">#006064</color>
+
+    <color name="februaryColorStart">#81C784</color>
+    <color name="februaryColorEnd">#2E7D32</color>
+
+    <color name="MarchColorStart">#9CCC65</color>
+    <color name="MarchColorEnd">#689F38</color>
+
+    <color name="AprilColorStart">#CDDC39</color>
+    <color name="AprilColorEnd">#9E9D24</color>
+
+    <color name="mayColorStart">#FFECB3</color>
+    <color name="mayColorEnd">#FFB300</color>
+
+    <color name="juneColorStart">#FB8C00</color>
+    <color name="juneColorEnd">#E65100</color>
+
+    <color name="julyColorStart">#F4511E</color>
+    <color name="julyColorEnd">#BF360C</color>
+
+    <color name="augustColorStart">#F44336</color>
+    <color name="augustColorEnd">#B71C1C</color>
+
+    <color name="septemberColorStart">#AB47BC</color>
+    <color name="septemberColorEnd">#6A1B9A</color>
+
+    <color name="octoberColorStart">#7E57C2</color>
+    <color name="octoberColorEnd">#311B92</color>
+
+    <color name="novemberColorStart">#3F51B5</color>
+    <color name="novemberColorEnd">#1A237E</color>
+
+    <color name="decemberColorStart">#2196F3</color>
+    <color name="decemberColorEnd">#0D47A1</color>
 </resources>
