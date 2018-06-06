@@ -2,9 +2,9 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item >
         <shape android:shape="rectangle">
-            <corners android:bottomLeftRadius="5dip" android:bottomRightRadius="5dip"
-                android:topLeftRadius="5dip" android:topRightRadius="5dip"/>
-            <stroke android:width="3dip" android:color="@color/colorPrimaryDark"/>
+            <corners android:bottomLeftRadius="10dip" android:bottomRightRadius="10dip" />
+            <!--<stroke android:width="1dip" android:color="@color/dateTextViewColor"/>-->
+            <gradient android:type="radial" android:gradientRadius="500dp" android:startColor="@color/itemTextViewColorEnd" android:endColor="@color/grey"/>
         </shape>
     </item>
 </selector>

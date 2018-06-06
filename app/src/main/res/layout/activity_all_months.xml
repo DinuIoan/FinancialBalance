@@ -1,83 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linear_layout_all_months"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".allMonths.AllMonthsActivity">
 
-    <Button
-        android:id="@+id/month1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month1" />
 
-    <Button
-        android:id="@+id/month2"
+    <LinearLayout
+        android:id="@+id/linear_layout_all_months"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month2" />
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/month3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month3" />
+        <Button
+            android:id="@+id/month1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_january_button"
+            android:text="@string/month1"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month4" />
+        <Button
+            android:id="@+id/month2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_february_button"
+            android:text="@string/month2"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month5" />
+        <Button
+            android:id="@+id/month3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_march_button"
+            android:text="@string/month3"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month6" />
+        <Button
+            android:id="@+id/month4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_april_button"
+            android:text="@string/month4"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month7" />
+        <Button
+            android:id="@+id/month5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_may_button"
+            android:text="@string/month5"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month8" />
+        <Button
+            android:id="@+id/month6"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_june_button"
+            android:text="@string/month6"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month9" />
+        <Button
+            android:id="@+id/month7"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_july_button"
+            android:text="@string/month7"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month10" />
+        <Button
+            android:id="@+id/month8"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_august_button"
+            android:text="@string/month8"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:text="@string/month11" />
+        <Button
+            android:id="@+id/month9"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_september_button"
+            android:text="@string/month9"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/month12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/month12" />
-</LinearLayout>
+        <Button
+            android:id="@+id/month10"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_october_button"
+            android:text="@string/month10"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/month11"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_november_button"
+            android:scrollbars="vertical"
+            android:text="@string/month11"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/month12"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:background="@drawable/style_december_button"
+            android:text="@string/month12"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

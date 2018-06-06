@@ -39,4 +39,15 @@
 
     <color name="decemberColorStart">#2196F3</color>
     <color name="decemberColorEnd">#0D47A1</color>
+
+    <color name="dateTextViewColor">#EF6C00</color>
+
+    <color name="itemTextViewColorStart">#FFF8E1</color>
+    <color name="itemTextViewColorEnd">#FFF3E0</color>
+
+    <color name="incomeColor">#43A047</color>
+    <color name="outcomeColor">#D50000</color>
+
+    <color name="black">#000000</color>
+    <color name="grey">#616161</color>
 </resources>
